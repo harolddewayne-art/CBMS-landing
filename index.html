@@ -131,6 +131,48 @@
     font-size: 0.85rem;
     color: var(--ink);
   }
+
+  .demo-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px 90px;
+  }
+  .demo-section h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .demo-section .sub {
+    margin-bottom: 32px;
+  }
+  .demo-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 0.92rem;
+  }
+  .demo-table th, .demo-table td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .demo-table th {
+    background: var(--bg-soft);
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .demo-table tr:last-child td { border-bottom: none; }
+  .demo-table code {
+    background: var(--pill-bg);
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-size: 0.88rem;
+  }
 </style>
 </head>
 <body>
@@ -167,6 +209,57 @@
     <span class="pill">&#127760; 14 Languages</span>
   </div>
 </main>
+
+<section class="demo-section" id="demo-accounts">
+  <h2>Try It Yourself &mdash; Demo Login Accounts</h2>
+  <p class="sub" style="text-align:center;">
+    The live demo is seeded with sample officer accounts covering different
+    roles, so you can see exactly what each one sees. Log in with any of these
+    on the <a href="https://church-budgeting-management-system-web.onrender.com" target="_blank" rel="noopener">live demo</a>.
+  </p>
+  <table class="demo-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fig Bloopington</td>
+        <td><code>fig.bloopington198@example-demo.org</code></td>
+        <td><code>Fig_@1</code></td>
+        <td>Elder</td>
+      </tr>
+      <tr>
+        <td>Goober Fizzlebee</td>
+        <td><code>goober.fizzlebee306@example-demo.org</code></td>
+        <td><code>Goober_23</code></td>
+        <td>Bulletins Coordinator</td>
+      </tr>
+      <tr>
+        <td>Gus Fandango</td>
+        <td><code>gus.fandango844@example-demo.org</code></td>
+        <td><code>Gus@99</code></td>
+        <td>Pastor</td>
+      </tr>
+      <tr>
+        <td>Sprinkles Dinglehopper</td>
+        <td><code>sprinkles.dinglehopper665@example-demo.org</code></td>
+        <td><code>Sprinkles@5</code></td>
+        <td>Data Entry</td>
+      </tr>
+      <tr>
+        <td>Wobble Bloopington</td>
+        <td><code>wobble.bloopington649@example-demo.org</code></td>
+        <td><code>Wobble@1</code></td>
+        <td>Membership Coordinator</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
 </body>
 </html>
