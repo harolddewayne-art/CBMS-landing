@@ -178,6 +178,69 @@
     border-radius: 5px;
     font-size: 0.88rem;
   }
+
+  section.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 20px;
+    border-top: 1px solid var(--line);
+  }
+  section.content h2 {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  section.content > p.sub {
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px;
+  }
+  .card .icon { font-size: 1.4rem; margin-bottom: 10px; }
+  .card h3 { font-size: 1.02rem; margin: 0 0 6px 0; }
+  .card p { font-size: 0.88rem; color: var(--muted); margin: 0; line-height: 1.5; }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  .why-item { display: flex; gap: 14px; }
+  .why-item .icon {
+    flex: 0 0 auto;
+    width: 34px; height: 34px;
+    border-radius: 8px;
+    background: var(--ink);
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem;
+  }
+  .why-item h3 { font-size: 1rem; margin: 0 0 4px 0; }
+  .why-item p { font-size: 0.88rem; color: var(--muted); margin: 0; line-height: 1.5; }
+
+  .lang-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .lang-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+  .lang-item .native { color: var(--muted); font-size: 0.85rem; }
 </style>
 </head>
 <body>
@@ -214,6 +277,97 @@
     <span class="pill">&#127760; 14 Languages</span>
   </div>
 </main>
+
+<section class="content" id="features">
+  <h2>Features</h2>
+  <p class="sub">Everything a church office needs to run day to day &mdash; in one place.</p>
+  <div class="card-grid">
+    <div class="card">
+      <div class="icon">&#128176;</div>
+      <h3>Budgeting &amp; Chart of Accounts</h3>
+      <p>Fund-based budgeting with a full chart of accounts, budget-vs-actual and income-statement reports.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#127873;</div>
+      <h3>Donations &amp; Giving</h3>
+      <p>Record donations by fund, print giving statements, and track pledges over time.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#9989;</div>
+      <h3>Attendance &amp; Check-In</h3>
+      <p>Service attendance, small group meetings, and a dedicated nursery check-in/check-out flow.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#128101;</div>
+      <h3>Membership Records</h3>
+      <p>Full parishioner directory &mdash; members, visitors, officers, and children &mdash; with role-based visibility.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#128240;</div>
+      <h3>Bulletins &amp; Postcards</h3>
+      <p>Print-ready weekly bulletins and outreach/thank-you postcards, generated straight from your data.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#128202;</div>
+      <h3>Treasurer Reports</h3>
+      <p>Fund overview, income statement, and budget-vs-actual reports formatted to match what treasurers already know.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#128274;</div>
+      <h3>Role-Based Access</h3>
+      <p>Separate logins for Pastor, Elder, Treasurer, Data Entry, and more &mdash; everyone sees only what they need.</p>
+    </div>
+    <div class="card">
+      <div class="icon">&#127760;</div>
+      <h3>14 Languages</h3>
+      <p>Full interface localization, not just a translated homepage &mdash; see the Languages section below.</p>
+    </div>
+  </div>
+</section>
+
+<section class="content" id="why" style="background:var(--bg-soft);">
+  <h2>Why CBMS</h2>
+  <p class="sub">Built as a straightforward alternative to paid church management platforms.</p>
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="icon">&#10003;</div>
+      <div><h3>No subscription, ever</h3><p>Free forever &mdash; no per-member, per-seat, or per-month fees, unlike Breeze, Planning Center, or ChurchTrac.</p></div>
+    </div>
+    <div class="why-item">
+      <div class="icon">&#128274;</div>
+      <div><h3>Self-hosted, your data</h3><p>Runs on your own server or PC. Your congregation's data never lives on a third-party cloud you don't control.</p></div>
+    </div>
+    <div class="why-item">
+      <div class="icon">&#9889;</div>
+      <div><h3>Fully featured, not a crippled free tier</h3><p>Budgeting, giving, attendance, membership, and reporting are all included &mdash; nothing paywalled behind a "Pro" plan.</p></div>
+    </div>
+    <div class="why-item">
+      <div class="icon">&#128421;</div>
+      <div><h3>Windows, macOS &amp; Linux</h3><p>Install it on whatever hardware your church already has, or try it first with the live demo above.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="content" id="languages">
+  <h2>Languages</h2>
+  <p class="sub">The full application interface is translated, not just this page.</p>
+  <div class="lang-grid">
+    <div class="lang-item"><span>English</span></div>
+    <div class="lang-item"><span>Spanish</span><span class="native">Espa&ntilde;ol</span></div>
+    <div class="lang-item"><span>French</span><span class="native">Fran&ccedil;ais</span></div>
+    <div class="lang-item"><span>German</span><span class="native">Deutsch</span></div>
+    <div class="lang-item"><span>Greek</span><span class="native">&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;&#940;</span></div>
+    <div class="lang-item"><span>Chinese (Simplified)</span><span class="native">&#31616;&#20307;&#20013;&#25991;</span></div>
+    <div class="lang-item"><span>Nepali</span><span class="native">&#2344;&#2375;&#2346;&#2366;&#2354;&#2368;</span></div>
+    <div class="lang-item"><span>Filipino</span></div>
+    <div class="lang-item"><span>Urdu</span><span class="native">&#1575;&#1585;&#1583;&#1608;</span></div>
+    <div class="lang-item"><span>Italian</span><span class="native">Italiano</span></div>
+    <div class="lang-item"><span>Japanese</span><span class="native">&#26085;&#26412;&#35486;</span></div>
+    <div class="lang-item"><span>Arabic</span><span class="native">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span></div>
+    <div class="lang-item"><span>Russian</span><span class="native">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></div>
+    <div class="lang-item"><span>Haitian Creole</span><span class="native">Krey&ograve;l Ayisyen</span></div>
+  </div>
+</section>
 
 <section class="demo-section" id="demo-accounts">
   <h2>Try It Yourself &mdash; Demo Login Accounts</h2>
