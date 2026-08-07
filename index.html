@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBMS — Church Management Software That Doesn't Cost a Thing</title>
+<style>
+  :root {
+    --ink: #111111;
+    --muted: #6b6f76;
+    --line: #e6e6e9;
+    --bg-soft: #fafafa;
+    --pill-bg: #f2f2f3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
+    color: var(--ink);
+    background: #ffffff;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    border-bottom: 1px solid var(--line);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+  .logo .mark {
+    width: 30px;
+    height: 30px;
+    background: var(--ink);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+  }
+  nav {
+    display: flex;
+    gap: 32px;
+  }
+  nav a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  nav a:hover { color: var(--muted); }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid var(--ink);
+  }
+  .btn-solid { background: var(--ink); color: #fff; }
+  .btn-solid:hover { background: #2a2a2a; }
+  .btn-outline { background: #fff; color: var(--ink); }
+  .btn-outline:hover { background: var(--bg-soft); }
+
+  main.hero {
+    background: linear-gradient(180deg, var(--bg-soft) 0%, #ffffff 60%);
+    text-align: center;
+    padding: 90px 20px 70px;
+  }
+  .badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: var(--pill-bg);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin: 0 auto 24px;
+    max-width: 760px;
+    font-weight: 800;
+  }
+  .sub {
+    max-width: 640px;
+    margin: 0 auto 36px;
+    color: var(--muted);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .cta-row {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .trust-line {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 34px;
+  }
+  .trust-line a { color: var(--muted); }
+  .avail-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--ink);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span class="mark">&#8962;</span> CBMS</div>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#why">Why CBMS</a>
+    <a href="#languages">Languages</a>
+    <a href="#get-started">Get Started</a>
+  </nav>
+  <a class="btn btn-solid" href="#get-started">Get Started Free &rsaquo;</a>
+</header>
+
+<main class="hero">
+  <div class="badge-pill">&#10003; 100% Free &middot; Self-Hosted &middot; 14 Languages &middot; Free-To-Use</div>
+  <h1>Church Management Software That Doesn't Cost a Thing</h1>
+  <p class="sub">
+    CBMS is a free, self-hosted alternative to expensive platforms like Breeze and
+    Planning Center. Budgeting, giving, attendance, membership, and pastoral care
+    &mdash; fully featured, forever free.
+  </p>
+  <div class="cta-row">
+    <a class="btn btn-solid" id="get-started" href="#" title="Link to your SourceForge downloads page">Get Started Free &rsaquo;</a>
+    <a class="btn btn-outline" href="https://church-budgeting-management-system-web.onrender.com" target="_blank" rel="noopener">View Live Demo &rsaquo;</a>
+  </div>
+  <div class="trust-line">Trusted by churches &amp; non-profits of all sizes &middot; No credit card required</div>
+  <div class="avail-row">
+    Available on
+    <span class="pill">&#128421; Windows</span>
+    <span class="pill">&#128421; macOS</span>
+    <span class="pill">&#128421; Linux</span>
+    <span class="pill">&#127760; 14 Languages</span>
+  </div>
+</main>
+
+</body>
+</html>
